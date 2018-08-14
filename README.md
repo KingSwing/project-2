@@ -1,2 +1,2 @@
-# project-2
-my second game
+# Project 2
+It's my second game - a top down shooter!
