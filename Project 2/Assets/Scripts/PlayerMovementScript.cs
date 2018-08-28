@@ -17,13 +17,10 @@ public class PlayerMovementScript : MonoBehaviour {
     {
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         MoveVelocity = moveInput.normalized * Speed;
-    }
-    void FixedUpdate ()
-    {
         //Accesses Rigidbody2D
         Rigidbody2D rb2D = gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
         //Applies the movement to the player
-        rb2D.velocity = (MoveVelocity * Time.fixedDeltaTime);
+        rb2D.velocity = (MoveVelocity * Time.deltaTime);
     }
 
 }

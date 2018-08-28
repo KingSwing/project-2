@@ -42,7 +42,6 @@ public class Pause : MonoBehaviour {
 
     public void QuitGame ()
     {
-        Time.timeScale = 1;
         Application.Quit();
     }
 }
